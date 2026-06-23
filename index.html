@@ -15,7 +15,6 @@
       --shadow: 0 10px 25px rgba(103, 58, 183, 0.15);
       --radius: 18px;
       --danger: #a63b67;
-      --success-bg: #f7f1ff;
     }
 
     * {
@@ -163,6 +162,7 @@
 
     h3 {
       color: var(--purple-dark);
+      margin-bottom: 8px;
     }
 
     .section-intro {
@@ -284,7 +284,6 @@
     }
 
     .qty-group label,
-    .select-group label,
     .field-group label {
       display: block;
       margin-bottom: 6px;
@@ -294,7 +293,6 @@
     }
 
     .qty-group input,
-    .select-group select,
     .field-group input,
     .field-group select,
     .field-group textarea {
@@ -486,7 +484,7 @@
     <section id="bread">
       <div class="section-card">
         <h2>Sourdough Bread</h2>
-        <p class="section-intro">Choose from 11 delicious sourdough bread flavors and set your Regular or Mini quantities right on each card.</p>
+        <p class="section-intro">Choose from 11 delicious sourdough bread flavors and add regular or mini loaves to your order.</p>
 
         <div class="product-grid">
 
@@ -494,9 +492,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Plain sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Plain" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter">
-              Plain
-            </button>
+            <button class="product-name-btn" type="button" data-product="Plain" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter">Plain</button>
             <p class="price">Regular $10.00</p>
             <p class="price">Mini $5.00</p>
             <p class="details">A flavorful loaf baked fresh for your table.</p>
@@ -506,9 +502,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Cinnamon Brown Sugar sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Cinnamon Brown Sugar" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough Starter|Cinnamon|Brown sugar">
-              Cinnamon Brown Sugar
-            </button>
+            <button class="product-name-btn" type="button" data-product="Cinnamon Brown Sugar" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough Starter|Cinnamon|Brown sugar">Cinnamon Brown Sugar</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">Classic handcrafted sourdough loaf.</p>
@@ -518,9 +512,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Cinnamon Raisin sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Cinnamon Raisin" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough Starter|Cinnamon|Raisins">
-              Cinnamon Raisin
-            </button>
+            <button class="product-name-btn" type="button" data-product="Cinnamon Raisin" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough Starter|Cinnamon|Raisins">Cinnamon Raisin</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">A flavorful loaf baked fresh for your table.</p>
@@ -530,9 +522,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Chocolate Chip sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Chocolate Chip" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough Starter|Sugar|Semi-Sweet Chocolate chips">
-              Chocolate Chip
-            </button>
+            <button class="product-name-btn" type="button" data-product="Chocolate Chip" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough Starter|Sugar|Semi-Sweet Chocolate chips">Chocolate Chip</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">Soft inside with a golden crust.</p>
@@ -542,9 +532,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Jalapeno Cheddar sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Jalapeno Cheddar" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Jalapenos|Sharp Cheddar Cheese">
-              Jalapeno Cheddar
-            </button>
+            <button class="product-name-btn" type="button" data-product="Jalapeno Cheddar" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Jalapenos|Sharp Cheddar Cheese">Jalapeno Cheddar</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">Perfect for slicing, toasting, or sandwiches.</p>
@@ -554,9 +542,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Jalapeno Cheddar Bacon sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Jalapeno Cheddar Bacon" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Jalapenos|Sharp Cheddar Cheese|Bacon">
-              Jalapeno Cheddar Bacon
-            </button>
+            <button class="product-name-btn" type="button" data-product="Jalapeno Cheddar Bacon" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Jalapenos|Sharp Cheddar Cheese|Bacon">Jalapeno Cheddar Bacon</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">A bakery favorite with bold sourdough flavor.</p>
@@ -566,9 +552,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Garlic Rosemary sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Garlic Rosemary" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Roasted Garlic|Dried Rosemary|Granulated Garlic">
-              Garlic Rosemary
-            </button>
+            <button class="product-name-btn" type="button" data-product="Garlic Rosemary" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Roasted Garlic|Dried Rosemary|Granulated Garlic">Garlic Rosemary</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">Fresh-baked and made to impress.</p>
@@ -578,9 +562,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Bacon Egg and Cheese sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Bacon, Egg, &amp; Cheese" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Bacon|Egg|3-Cheese Blend">
-              Bacon, Egg, &amp; Cheese
-            </button>
+            <button class="product-name-btn" type="button" data-product="Bacon, Egg, &amp; Cheese" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Bacon|Egg|3-Cheese Blend">Bacon, Egg, &amp; Cheese</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">Great for gifting, sharing, or enjoying at home.</p>
@@ -590,9 +572,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Bacon and Cheese sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Bacon &amp; Cheese" data-ingredients="Flour|Water|Salt|Sourdough starter|Bacon|3-Cheese Blend">
-              Bacon &amp; Cheese
-            </button>
+            <button class="product-name-btn" type="button" data-product="Bacon &amp; Cheese" data-ingredients="Flour|Water|Salt|Sourdough starter|Bacon|3-Cheese Blend">Bacon &amp; Cheese</button>
             <p class="price">$0.00</p>
             <p class="details">Homestyle sourdough with a bakery finish.</p>
           </div>
@@ -601,9 +581,7 @@
             <figure class="product-image">
               <img src="BBRY&LEM.JPG" alt="Blueberry and Lemon sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Blueberry &amp; Lemon" data-ingredients="Flour|Water|Salt|Sourdough starter|Blueberries|Lemon">
-              Blueberry &amp; Lemon
-            </button>
+            <button class="product-name-btn" type="button" data-product="Blueberry &amp; Lemon" data-ingredients="Flour|Water|Salt|Sourdough starter|Blueberries|Lemon">Blueberry &amp; Lemon</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">A delicious final option to round out your menu.</p>
@@ -613,9 +591,7 @@
             <figure class="product-image">
               <img src="GAR&PARM.JPG" alt="Garlic Parmesan sourdough bread">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Garlic Parmesan" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Rosted Garlic|Parmesan cheese|Granulated Garlic">
-              Roasted Garlic &amp; Parmesan
-            </button>
+            <button class="product-name-btn" type="button" data-product="Garlic Parmesan" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Rosted Garlic|Parmesan cheese|Granulated Garlic">Roasted Garlic &amp; Parmesan</button>
             <p class="price">Regular $12.00</p>
             <p class="price">Mini $6.00</p>
             <p class="details">A delicious final option to round out your menu.</p>
@@ -635,9 +611,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Plain Bagel">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Plain Bagel" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter">
-              Plain Bagel
-            </button>
+            <button class="product-name-btn" type="button" data-product="Plain Bagel" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter">Plain Bagel</button>
             <p class="price">4 - $8.00</p>
             <p class="details">Fresh sourdough bagels with a chewy bite and rich flavor.</p>
           </div>
@@ -646,9 +620,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Everything Bagel">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Everything Bagel" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Everything seasoning">
-              Everything Bagel
-            </button>
+            <button class="product-name-btn" type="button" data-product="Everything Bagel" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Everything seasoning">Everything Bagel</button>
             <p class="price">4 - $10.00</p>
             <p class="details">A simple, delicious option for breakfast or snacking.</p>
           </div>
@@ -657,9 +629,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Jalapeno Cheddar Bagel">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Jalapeno Cheddar Bagel" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Jalapenos|Cheddar cheese">
-              Jalapeno Cheddar Bagel
-            </button>
+            <button class="product-name-btn" type="button" data-product="Jalapeno Cheddar Bagel" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Jalapenos|Cheddar cheese">Jalapeno Cheddar Bagel</button>
             <p class="price">4 - $10.00</p>
             <p class="details">Made fresh and full of sourdough goodness.</p>
           </div>
@@ -668,9 +638,7 @@
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Cinnamon Toast Crunch Bagel">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Cinnamon Toast Crunch Bagel" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Cinnamon sugar|Cinnamon Toast Crunch topping">
-              Cinnamon Toast Crunch Bagel
-            </button>
+            <button class="product-name-btn" type="button" data-product="Cinnamon Toast Crunch Bagel" data-ingredients="Unbleached Bread Flour|Filtered Water|Salt|Sourdough starter|Cinnamon sugar|Cinnamon Toast Crunch topping">Cinnamon Toast Crunch Bagel</button>
             <p class="price">4 - $10.00</p>
             <p class="details">Perfect toasted, topped, or enjoyed as-is.</p>
           </div>
@@ -681,16 +649,14 @@
     <section id="mini-bagels">
       <div class="section-card">
         <h2>Mini Stuffed Bagels</h2>
-        <p class="section-intro">Choose from 4 stuffed bagel types with your cream cheese selection on the order controls.</p>
+        <p class="section-intro">Choose from 4 stuffed bagel types, and order separate quantities for each cream cheese option.</p>
 
         <div class="product-grid">
-          <div class="product-card" data-order-type="mini-stuffed" data-product-name="Plain Mini Stuffed Bagel" data-pack-size="8" data-pack-price="10" data-options="Regular Cream Cheese|Strawberry Cream Cheese|Chive & Onion Cream Cheese">
+          <div class="product-card" data-order-type="mini-stuffed" data-product-name="Plain Mini Stuffed Bagel" data-pack-size="8" data-pack-price="10">
             <figure class="product-image">
               <img src="PLAINBAGMINI.JPEG" alt="Plain Mini Stuffed Bagel">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Plain Mini Stuffed Bagel" data-ingredients="Bagel dough|Sourdough starter|Cream cheese filling of choice|Regular cream cheese option|Strawberry cream cheese option|Chive &amp; Onion cream cheese option">
-              Plain Mini Stuffed Bagel
-            </button>
+            <button class="product-name-btn" type="button" data-product="Plain Mini Stuffed Bagel" data-ingredients="Bagel dough|Sourdough starter|Cream cheese filling of choice|Regular cream cheese option|Strawberry cream cheese option|Chive &amp; Onion cream cheese option">Plain Mini Stuffed Bagel</button>
             <p class="price">8 - $10.00</p>
             <div class="details">
               <p>Choose your cream cheese:</p>
@@ -702,13 +668,11 @@
             </div>
           </div>
 
-          <div class="product-card" data-order-type="mini-stuffed" data-product-name="Everything Mini Stuffed Bagel" data-pack-size="8" data-pack-price="12" data-options="Regular Cream Cheese|Strawberry Cream Cheese|Chive & Onion Cream Cheese">
+          <div class="product-card" data-order-type="mini-stuffed" data-product-name="Everything Mini Stuffed Bagel" data-pack-size="8" data-pack-price="12">
             <figure class="product-image">
               <img src="EVRBAGMINI.JPEG" alt="Everything Mini Stuffed Bagel">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Everything Mini Stuffed Bagel" data-ingredients="Bagel dough|Sourdough starter|Everything seasoning|Cream cheese filling of choice|Regular cream cheese option|Strawberry cream cheese option|Chive &amp; Onion cream cheese option">
-              Everything Mini Stuffed Bagel
-            </button>
+            <button class="product-name-btn" type="button" data-product="Everything Mini Stuffed Bagel" data-ingredients="Bagel dough|Sourdough starter|Everything seasoning|Cream cheese filling of choice|Regular cream cheese option|Strawberry cream cheese option|Chive &amp; Onion cream cheese option">Everything Mini Stuffed Bagel</button>
             <p class="price">8 - $12.00</p>
             <div class="details">
               <p>Choose your cream cheese:</p>
@@ -720,13 +684,11 @@
             </div>
           </div>
 
-          <div class="product-card" data-order-type="mini-stuffed" data-product-name="Jalapeno Cheddar Mini Stuffed Bagel" data-pack-size="8" data-pack-price="12" data-options="Regular Cream Cheese|Strawberry Cream Cheese|Chive & Onion Cream Cheese">
+          <div class="product-card" data-order-type="mini-stuffed" data-product-name="Jalapeno Cheddar Mini Stuffed Bagel" data-pack-size="8" data-pack-price="12">
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Jalapeno Cheddar Mini Stuffed Bagel">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Jalapeno Cheddar Mini Stuffed Bagel" data-ingredients="Bagel dough|Sourdough starter|Jalapenos|Cheddar cheese|Cream cheese filling of choice|Regular cream cheese option|Strawberry cream cheese option|Chive &amp; Onion cream cheese option">
-              Jalapeno Cheddar Mini Stuffed Bagel
-            </button>
+            <button class="product-name-btn" type="button" data-product="Jalapeno Cheddar Mini Stuffed Bagel" data-ingredients="Bagel dough|Sourdough starter|Jalapenos|Cheddar cheese|Cream cheese filling of choice|Regular cream cheese option|Strawberry cream cheese option|Chive &amp; Onion cream cheese option">Jalapeno Cheddar Mini Stuffed Bagel</button>
             <p class="price">8 - $12.00</p>
             <div class="details">
               <p>Choose your cream cheese:</p>
@@ -738,13 +700,11 @@
             </div>
           </div>
 
-          <div class="product-card" data-order-type="mini-stuffed" data-product-name="Cinnamon Toast Crunch Mini Stuffed Bagel" data-pack-size="8" data-pack-price="12" data-options="Regular Cream Cheese|Strawberry Cream Cheese|Chive & Onion Cream Cheese">
+          <div class="product-card" data-order-type="mini-stuffed" data-product-name="Cinnamon Toast Crunch Mini Stuffed Bagel" data-pack-size="8" data-pack-price="12">
             <figure class="product-image">
               <img src="IMAGE_URL_HERE" alt="Cinnamon Toast Crunch Mini Stuffed Bagel">
             </figure>
-            <button class="product-name-btn" type="button" data-product="Cinnamon Toast Crunch Mini Stuffed Bagel" data-ingredients="Bagel dough|Sourdough starter|Cinnamon sugar|Cinnamon Toast Crunch topping|Cream cheese filling of choice|Regular cream cheese option|Strawberry cream cheese option|Chive &amp; Onion cream cheese option">
-              Cinnamon Toast Crunch Mini Stuffed Bagel
-            </button>
+            <button class="product-name-btn" type="button" data-product="Cinnamon Toast Crunch Mini Stuffed Bagel" data-ingredients="Bagel dough|Sourdough starter|Cinnamon sugar|Cinnamon Toast Crunch topping|Cream cheese filling of choice|Regular cream cheese option|Strawberry cream cheese option|Chive &amp; Onion cream cheese option">Cinnamon Toast Crunch Mini Stuffed Bagel</button>
             <p class="price">8 - $12.00</p>
             <div class="details">
               <p>Choose your cream cheese:</p>
@@ -755,7 +715,6 @@
               </ul>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -763,20 +722,16 @@
     <section id="order" class="order-section">
       <div class="section-card">
         <h2>Place Your Order</h2>
-        <p class="section-intro">Set quantities on the product cards above, review your live order summary below, then submit your order request. Orders will be emailed when you replace the placeholder email address in the form action.</p>
+        <p class="section-intro">Set quantities on the product cards above, review your live order summary below, then submit your order request.</p>
 
-        <form
-          id="storeOrderForm"
-          class="store-order-form"
-          action="https://formsubmit.co/YOUR-EMAIL@example.com"
-          method="POST"
-        >
+        <form id="storeOrderForm" class="store-order-form" action="https://formsubmit.co/YOUR-EMAIL@example.com" method="POST">
+          <input type="hidden" name="_subject" value="New Ivy's Sourdough Creations Order">
           <input type="hidden" name="order_summary" id="orderSummaryInput">
           <input type="hidden" name="total_estimate" id="totalEstimateInput">
 
           <div class="summary-box">
             <h3>Your Order Summary</h3>
-            <p>Choose items above and this section will build automatically.</p>
+            <p>Choose items above and this section will update automatically.</p>
             <div id="orderSummaryDisplay" class="empty-summary">No items selected yet.</div>
             <p class="estimate">Estimated Total: <span id="orderTotal">$0.00</span></p>
             <p class="order-note">This total is an estimate based on the prices shown on the page.</p>
@@ -832,7 +787,8 @@
               <button type="submit" class="btn btn-primary">Submit Order</button>
               <span class="submit-help">Your selected items and customer details will be sent together.</span>
             </div>
-            <p class="required-note">Replace YOUR-EMAIL@example.com in the form tag before publishing.</p>
+
+            <p class="required-note">Before publishing, replace YOUR-EMAIL@example.com in the form action with your real email address.</p>
           </div>
         </form>
       </div>
@@ -845,7 +801,7 @@
     <p class="dialog-text">Review the ingredients for this item below.</p>
     <ul class="ingredient-list" id="ingredientList"></ul>
     <form method="dialog" class="dialog-actions">
-      <button class="btn btn-primary">Close</button>
+      <button class="btn btn-primary" type="submit">Close</button>
     </form>
   </dialog>
 
@@ -962,59 +918,34 @@
           controls.appendChild(singleRow);
         }
 
-if (type === "mini-stuffed") {
-  const row = document.createElement("div");
-  row.className = "mini-order-row";
+        if (type === "mini-stuffed") {
+          const row = document.createElement("div");
+          row.className = "mini-order-row";
 
-  row.appendChild(
-    createQtyGroup(
-      `Regular Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
-      `qty_${slug}_regular_cc`,
-      "mini_regular_cc"
-    )
-  );
+          row.appendChild(
+            createQtyGroup(
+              `Regular Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
+              `qty_${slug}_regular_cc`,
+              "mini_regular_cc"
+            )
+          );
 
-  row.appendChild(
-    createQtyGroup(
-      `Strawberry Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
-      `qty_${slug}_strawberry_cc`,
-      "mini_strawberry_cc"
-    )
-  );
+          row.appendChild(
+            createQtyGroup(
+              `Strawberry Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
+              `qty_${slug}_strawberry_cc`,
+              "mini_strawberry_cc"
+            )
+          );
 
-  row.appendChild(
-    createQtyGroup(
-      `Chive & Onion Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
-      `qty_${slug}_chive_cc`,
-      "mini_chive_cc"
-    )
-  );
+          row.appendChild(
+            createQtyGroup(
+              `Chive & Onion Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
+              `qty_${slug}_chive_cc`,
+              "mini_chive_cc"
+            )
+          );
 
-  controls.appendChild(row);
-}
-
-
-          const selectGroup = document.createElement("div");
-          selectGroup.className = "select-group";
-
-          const label = document.createElement("label");
-          label.textContent = "Cream Cheese Choice";
-
-          const select = document.createElement("select");
-          select.name = `filling_${slug}`;
-          select.dataset.orderField = "option";
-
-          const options = card.dataset.options.split("|");
-          options.forEach((option) => {
-            const opt = document.createElement("option");
-            opt.value = option;
-            opt.textContent = option;
-            select.appendChild(opt);
-          });
-
-          selectGroup.appendChild(label);
-          selectGroup.appendChild(select);
-          row.appendChild(selectGroup);
           controls.appendChild(row);
         }
 
@@ -1073,28 +1004,28 @@ if (type === "mini-stuffed") {
           }
         }
 
-if (type === "mini-stuffed") {
-  const regularQty = Number(card.querySelector('[data-order-field="mini_regular_cc"]').value || 0);
-  const strawberryQty = Number(card.querySelector('[data-order-field="mini_strawberry_cc"]').value || 0);
-  const chiveQty = Number(card.querySelector('[data-order-field="mini_chive_cc"]').value || 0);
-  const price = Number(card.dataset.packPrice);
-  const packSize = card.dataset.packSize;
+        if (type === "mini-stuffed") {
+          const regularQty = Number(card.querySelector('[data-order-field="mini_regular_cc"]').value || 0);
+          const strawberryQty = Number(card.querySelector('[data-order-field="mini_strawberry_cc"]').value || 0);
+          const chiveQty = Number(card.querySelector('[data-order-field="mini_chive_cc"]').value || 0);
+          const price = Number(card.dataset.packPrice);
+          const packSize = card.dataset.packSize;
 
-  if (regularQty > 0) {
-    lines.push(`${regularQty} x ${productName} (${packSize}-pack, Regular Cream Cheese, ${money(price)} each)`);
-    total += regularQty * price;
-  }
+          if (regularQty > 0) {
+            lines.push(`${regularQty} x ${productName} (${packSize}-pack, Regular Cream Cheese, ${money(price)} each)`);
+            total += regularQty * price;
+          }
 
-  if (strawberryQty > 0) {
-    lines.push(`${strawberryQty} x ${productName} (${packSize}-pack, Strawberry Cream Cheese, ${money(price)} each)`);
-    total += strawberryQty * price;
-  }
+          if (strawberryQty > 0) {
+            lines.push(`${strawberryQty} x ${productName} (${packSize}-pack, Strawberry Cream Cheese, ${money(price)} each)`);
+            total += strawberryQty * price;
+          }
 
-  if (chiveQty > 0) {
-    lines.push(`${chiveQty} x ${productName} (${packSize}-pack, Chive & Onion Cream Cheese, ${money(price)} each)`);
-    total += chiveQty * price;
-  }
-}
+          if (chiveQty > 0) {
+            lines.push(`${chiveQty} x ${productName} (${packSize}-pack, Chive & Onion Cream Cheese, ${money(price)} each)`);
+            total += chiveQty * price;
+          }
+        }
       });
 
       if (lines.length === 0) {
@@ -1142,7 +1073,6 @@ if (type === "mini-stuffed") {
       if (!orderSummaryInput.value.trim()) {
         event.preventDefault();
         alert("Please add at least one item to your order before submitting.");
-        return;
       }
     });
   </script>
