@@ -962,17 +962,37 @@
           controls.appendChild(singleRow);
         }
 
-        if (type === "mini-stuffed") {
-          const row = document.createElement("div");
-          row.className = "mini-order-row";
+if (type === "mini-stuffed") {
+  const row = document.createElement("div");
+  row.className = "mini-order-row";
 
-          row.appendChild(
-            createQtyGroup(
-              `${card.dataset.packSize}-Pack Quantity (${money(card.dataset.packPrice)} each)`,
-              `qty_${slug}_pack`,
-              "pack"
-            )
-          );
+  row.appendChild(
+    createQtyGroup(
+      `Regular Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
+      `qty_${slug}_regular_cc`,
+      "mini_regular_cc"
+    )
+  );
+
+  row.appendChild(
+    createQtyGroup(
+      `Strawberry Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
+      `qty_${slug}_strawberry_cc`,
+      "mini_strawberry_cc"
+    )
+  );
+
+  row.appendChild(
+    createQtyGroup(
+      `Chive & Onion Cream Cheese (${card.dataset.packSize}-pack at ${money(card.dataset.packPrice)} each)`,
+      `qty_${slug}_chive_cc`,
+      "mini_chive_cc"
+    )
+  );
+
+  controls.appendChild(row);
+}
+
 
           const selectGroup = document.createElement("div");
           selectGroup.className = "select-group";
@@ -1053,17 +1073,28 @@
           }
         }
 
-        if (type === "mini-stuffed") {
-          const qty = Number(card.querySelector('[data-order-field="pack"]').value || 0);
-          const option = card.querySelector('[data-order-field="option"]').value;
-          const price = Number(card.dataset.packPrice);
-          const packSize = card.dataset.packSize;
+if (type === "mini-stuffed") {
+  const regularQty = Number(card.querySelector('[data-order-field="mini_regular_cc"]').value || 0);
+  const strawberryQty = Number(card.querySelector('[data-order-field="mini_strawberry_cc"]').value || 0);
+  const chiveQty = Number(card.querySelector('[data-order-field="mini_chive_cc"]').value || 0);
+  const price = Number(card.dataset.packPrice);
+  const packSize = card.dataset.packSize;
 
-          if (qty > 0) {
-            lines.push(`${qty} x ${productName} (${packSize}-pack, ${option}, ${money(price)} each)`);
-            total += qty * price;
-          }
-        }
+  if (regularQty > 0) {
+    lines.push(`${regularQty} x ${productName} (${packSize}-pack, Regular Cream Cheese, ${money(price)} each)`);
+    total += regularQty * price;
+  }
+
+  if (strawberryQty > 0) {
+    lines.push(`${strawberryQty} x ${productName} (${packSize}-pack, Strawberry Cream Cheese, ${money(price)} each)`);
+    total += strawberryQty * price;
+  }
+
+  if (chiveQty > 0) {
+    lines.push(`${chiveQty} x ${productName} (${packSize}-pack, Chive & Onion Cream Cheese, ${money(price)} each)`);
+    total += chiveQty * price;
+  }
+}
       });
 
       if (lines.length === 0) {
