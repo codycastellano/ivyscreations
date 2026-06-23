@@ -152,7 +152,7 @@
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 18px;
     }
 
@@ -162,6 +162,20 @@
       border-radius: var(--radius);
       padding: 18px;
       box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .product-image {
+      margin: -18px -18px 14px -18px;
+      background: #fff;
+      border-bottom: 2px solid var(--pink-light);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
     }
 
     .product-card h3 {
@@ -237,6 +251,10 @@
       .section-card {
         padding: 24px 18px;
       }
+
+      .product-image img {
+        height: 200px;
+      }
     }
   </style>
 </head>
@@ -268,60 +286,85 @@
     <section id="bread">
       <div class="section-card">
         <h2>Sourdough Bread</h2>
-        <p class="section-intro">
-          Choose from 9 delicious sourdough bread flavors. Update each flavor name and price below to match your current menu.
-        </p>
+        <p class="section-intro">Choose from 9 delicious sourdough bread flavors.</p>
 
         <div class="product-grid">
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 1 sourdough bread">
+            </figure>
             <h3>Flavor 1</h3>
             <p class="price">$0.00</p>
             <p class="details">Classic handcrafted sourdough loaf.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 2 sourdough bread">
+            </figure>
             <h3>Flavor 2</h3>
             <p class="price">$0.00</p>
             <p class="details">A flavorful loaf baked fresh for your table.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 3 sourdough bread">
+            </figure>
             <h3>Flavor 3</h3>
             <p class="price">$0.00</p>
             <p class="details">Soft inside with a golden crust.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 4 sourdough bread">
+            </figure>
             <h3>Flavor 4</h3>
             <p class="price">$0.00</p>
             <p class="details">Perfect for slicing, toasting, or sandwiches.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 5 sourdough bread">
+            </figure>
             <h3>Flavor 5</h3>
             <p class="price">$0.00</p>
             <p class="details">A bakery favorite with bold sourdough flavor.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 6 sourdough bread">
+            </figure>
             <h3>Flavor 6</h3>
             <p class="price">$0.00</p>
             <p class="details">Fresh-baked and made to impress.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 7 sourdough bread">
+            </figure>
             <h3>Flavor 7</h3>
             <p class="price">$0.00</p>
             <p class="details">Great for gifting, sharing, or enjoying at home.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 8 sourdough bread">
+            </figure>
             <h3>Flavor 8</h3>
             <p class="price">$0.00</p>
             <p class="details">Homestyle sourdough with a bakery finish.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Flavor 9 sourdough bread">
+            </figure>
             <h3>Flavor 9</h3>
             <p class="price">$0.00</p>
             <p class="details">A delicious final option to round out your menu.</p>
@@ -333,30 +376,40 @@
     <section id="bagels">
       <div class="section-card">
         <h2>Sourdough Bagels</h2>
-        <p class="section-intro">
-          Feature your 4 bagel products here with pricing and short descriptions.
-        </p>
+        <p class="section-intro">Feature your 4 bagel products here with pricing and photos.</p>
 
         <div class="product-grid">
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Bagel Product 1">
+            </figure>
             <h3>Bagel Product 1</h3>
             <p class="price">$0.00</p>
             <p class="details">Fresh sourdough bagels with a chewy bite and rich flavor.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Bagel Product 2">
+            </figure>
             <h3>Bagel Product 2</h3>
             <p class="price">$0.00</p>
             <p class="details">A simple, delicious option for breakfast or snacking.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Bagel Product 3">
+            </figure>
             <h3>Bagel Product 3</h3>
             <p class="price">$0.00</p>
             <p class="details">Made fresh and full of sourdough goodness.</p>
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Bagel Product 4">
+            </figure>
             <h3>Bagel Product 4</h3>
             <p class="price">$0.00</p>
             <p class="details">Perfect toasted, topped, or enjoyed as-is.</p>
@@ -368,12 +421,13 @@
     <section id="mini-bagels">
       <div class="section-card">
         <h2>Mini Stuffed Bagels</h2>
-        <p class="section-intro">
-          Customers can choose from 3 stuffed bagel types, each available with 3 cream cheese options.
-        </p>
+        <p class="section-intro">Choose from 3 stuffed bagel types with 3 cream cheese options each.</p>
 
         <div class="product-grid">
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Mini Stuffed Bagel Type 1">
+            </figure>
             <h3>Mini Stuffed Bagel Type 1</h3>
             <p class="price">$0.00</p>
             <div class="details">
@@ -387,6 +441,9 @@
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Mini Stuffed Bagel Type 2">
+            </figure>
             <h3>Mini Stuffed Bagel Type 2</h3>
             <p class="price">$0.00</p>
             <div class="details">
@@ -400,6 +457,9 @@
           </div>
 
           <div class="product-card">
+            <figure class="product-image">
+              <img src="IMAGE_URL_HERE" alt="Mini Stuffed Bagel Type 3">
+            </figure>
             <h3>Mini Stuffed Bagel Type 3</h3>
             <p class="price">$0.00</p>
             <div class="details">
@@ -418,9 +478,7 @@
     <section id="order" class="order-section">
       <div class="order-box">
         <h2>Order Your Favorites</h2>
-        <p>
-          Ready to place an order? Click the button below to open the order form and submit your selections.
-        </p>
+        <p>Ready to place an order? Click below to open the order form and submit your selections.</p>
         <a href="ORDER_FORM_URL_HERE" class="btn btn-primary" target="_blank">Go to Order Form</a>
       </div>
     </section>
@@ -432,4 +490,5 @@
   </footer>
 
 </body>
+</html>
 </html>
